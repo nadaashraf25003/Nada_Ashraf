@@ -79,11 +79,11 @@ function Aboutme() {
             Experience
           </div>
           <div className="projects bg-PrimSecColor text-btnTxTColor px-10 py-5 rounded-lg text-center font-extrabold ">
-            <span className="text-3xl">20+</span> <br />
+            <span className="text-3xl">11+</span> <br />
             Project Completed
           </div>
           <div className="achievements bg-PrimSecColor text-btnTxTColor px-10 py-5 rounded-lg text-center font-extrabold ">
-            <span className="text-3xl">15</span> <br /> Achievements
+            <span className="text-3xl">8</span> <br /> Achievements
           </div>
         </div>
       </div>
