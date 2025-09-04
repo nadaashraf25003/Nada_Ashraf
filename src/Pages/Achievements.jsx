@@ -20,12 +20,12 @@ function Achievements() {
   const indexOfFirst = indexOfLast - certificationsPerPage;
   const currentcertifications = certifications.slice(indexOfFirst, indexOfLast);
 
-  // ✅ Calculate total pages
+  //  Calculate total pages
   const totalPages = Math.ceil(certifications.length / certificationsPerPage);
 
   return (
     <>
-      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%]">
+      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%] max-sm:p-10">
         <p
           className="text-5xl font-bold max-md:text-4xl text-OrangeColor mb-5 flex items-end gap-3
         animate__animated animate__fadeInDown max-md:px-5"
@@ -34,7 +34,7 @@ function Achievements() {
           <span className="block h-[5px] max-md:hidden w-[70%] bg-PrimSecColor "></span>
         </p>
 
-        {/* ✅ Render only sliced projects */}
+        {/* Render only sliced projects */}
         <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1 my-10 justify-items-center ">
           {currentcertifications.map((certification) => (
             <div
