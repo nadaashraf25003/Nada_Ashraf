@@ -23,7 +23,7 @@ function Projects() {
 
   return (
     <>
-      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%]">
+      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%] max-sm:p-3">
         <p
           className="text-5xl font-bold max-md:text-4xl text-OrangeColor mb-5 flex items-end gap-3
         animate__animated animate__fadeInDown max-md:px-5"
@@ -32,12 +32,12 @@ function Projects() {
           <span className="block h-[5px] max-md:hidden w-[70%] bg-PrimSecColor "></span>
         </p>
 
-        {/* ✅ Render only sliced projects */}
+        {/*  Render only sliced projects */}
         <div className="projects-container grid grid-cols-2 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1 p-4">
           {currentProjects.map((project) => (
             <div
               key={project.id}
-              className="project_card bg-mainColor rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              className="project_card bg-mainColor rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 max-sm:w-[100%] "
             >
               {/* Card Image */}
               <div className="card-image relative overflow-hidden">
