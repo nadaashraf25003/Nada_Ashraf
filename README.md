@@ -21,5 +21,3 @@ A modern, responsive portfolio website built with **React** and **Tailwind CSS**
 
 - **Frontend:** React.js, JSX, Tailwind CSS  
 - **Styling Tools:** Animate.css, FontAwesome, Devicon  
-- **Form Handling:** EmailJS integration  
-- **Version Control:** Git & GitHub  
