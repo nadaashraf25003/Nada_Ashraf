@@ -2,7 +2,7 @@
 import "/src/index.css";
 
 // Assets
-import Nada from "../assets/Nada.png";
+import Nada from "/public/assets/Nada.png";
 import cvFile from "../assets/Nada_Ashraf_CV.pdf";
 
 function Cover() {

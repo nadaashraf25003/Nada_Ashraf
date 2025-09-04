@@ -2,7 +2,7 @@
 import "/src/index.css";
 
 // Assets
-import Nada from "../assets/Nada.png";
+import Nada from "/public/assets/Nada.png";
 
 // React
 import { useLocation } from "react-router-dom";

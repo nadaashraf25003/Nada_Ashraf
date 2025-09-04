@@ -1,9 +1,6 @@
 // Style
 import "/src/index.css";
 
-// Assets 
-import Nada from "../assets/Nada.png";
-
 // React
 import { useState } from "react";
 
@@ -20,12 +17,12 @@ function Achievements() {
   const indexOfFirst = indexOfLast - certificationsPerPage;
   const currentcertifications = certifications.slice(indexOfFirst, indexOfLast);
 
-  // ✅ Calculate total pages
+  //  Calculate total pages
   const totalPages = Math.ceil(certifications.length / certificationsPerPage);
 
   return (
     <>
-      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%]">
+      <div className="cover px-16 items-center max-md:flex-wrap max-md:text-center gap-4 py-[10%] max-sm:p-10">
         <p
           className="text-5xl font-bold max-md:text-4xl text-OrangeColor mb-5 flex items-end gap-3
         animate__animated animate__fadeInDown max-md:px-5"
@@ -34,7 +31,7 @@ function Achievements() {
           <span className="block h-[5px] max-md:hidden w-[70%] bg-PrimSecColor "></span>
         </p>
 
-        {/* ✅ Render only sliced projects */}
+        {/* Render only sliced projects */}
         <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1 my-10 justify-items-center ">
           {currentcertifications.map((certification) => (
             <div
@@ -46,7 +43,7 @@ function Achievements() {
               <span className="span1"></span>
               <div className="card-image h-[250px] max-md:h-[300px]">
                 <img
-                  src={Nada}
+                  src={certification.image}
                   alt={certification.title}
                   className="w-full h-full object-cover"
                 />
@@ -56,6 +53,9 @@ function Achievements() {
                 <div className="card-detail ">
                   <h2 className="bg-gradient-to-r from-[#2eadff] via-[#3d83ff] to-[#7e61ff] bg-clip-text text-transparent font-extrabold text-l mb-2">
                     {certification.title}
+                  </h2>
+                  <h2 className="text-gray-200 font-extrabold text-sm mb-2">
+                    {certification.issuer}
                   </h2>
                   <p className="text-gray-500 text-sm text-justify">
                     {certification.description}
@@ -76,23 +76,23 @@ function Achievements() {
                     </span>
                   ))}
                 </div>
-                <div className="card-actions flex justify-between items-center mt-3 max-md:flex-col max-md:items-center ">
-                  <a href={certification.link} target="_blank" rel="noreferrer"  className="max-md:w-full">
+                <div className="card-actions flex justify-center items-center mt-3 max-md:flex-col max-md:items-center ">
+                  <a href={certification.link} target="_blank" rel="noreferrer"  className="w-full">
                     <button
                       className="card-btn bg-OrangeColor p-3 rounded-md text-white text-sm font-semibold max-md:mb-5 
-                    hover:bg-orange-600 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out max-md:w-full"
+                    hover:bg-orange-600 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out w-full"
                     >
-                      <i className="fas fa-external-link-alt"></i> View Project
+                      <i className="fas fa-external-link-alt"></i> View Certification
                     </button>
                   </a>
-                  <a href={certification.link} target="_blank" rel="noreferrer" className="max-md:w-full">
+                  {/* <a href={certification.link} target="_blank" rel="noreferrer" className="max-md:w-full">
                     <button
                       className="card-btn bg-OrangeColor p-3  rounded-md text-white text-sm font-semibold
                     hover:bg-orange-600 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out max-md:w-full"
                     >
                       <i className="fab fa-github"></i> GitHub
                     </button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

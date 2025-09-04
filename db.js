@@ -32,7 +32,6 @@ export const education = [
   },
 ];
 
-
 /* =========== Experiences ===========  */
 export const experiences = [
   {
@@ -90,7 +89,6 @@ export const services = [
   },
 ];
 
-
 /* =========== Skills ===========  */
 export const skills = [
   // Programming Languages
@@ -111,12 +109,16 @@ export const skills = [
   { name: "CSS", percentage: 90, icon: "fa-brands fa-css3-alt" },
   { name: "APIs", percentage: 80, icon: "fa-solid fa-plug" },
   { name: "PHP", percentage: 65, icon: "fa-brands fa-php" },
-  // { name: "Angular (Basics)", percentage: 60, icon: "fa-brands fa-angular" },  
+  // { name: "Angular (Basics)", percentage: 60, icon: "fa-brands fa-angular" },
 
   // Databases
   // { name: "MongoDB", percentage: 75, icon: "devicon-mongodb-plain" },
   // { name: "MySQL", percentage: 70, icon: "devicon-mysql-plain" },
-  { name: "SQL Server", percentage: 70, icon: "devicon-microsoftsqlserver-plain" },
+  {
+    name: "SQL Server",
+    percentage: 70,
+    icon: "devicon-microsoftsqlserver-plain",
+  },
 
   // Tools
   { name: "Git & GitHub", percentage: 85, icon: "fa-brands fa-github" },
@@ -130,12 +132,19 @@ export const skills = [
   // Concepts
   // { name: "Authentication & Authorization", percentage: 80, icon: "fa-solid fa-lock" },
   // { name: "State Management", percentage: 75, icon: "fa-solid fa-diagram-project" },
-  { name: "Routing & Protected Routes", percentage: 75, icon: "fa-solid fa-route" },
+  {
+    name: "Routing & Protected Routes",
+    percentage: 75,
+    icon: "fa-solid fa-route",
+  },
   // { name: "Data Structures & Algorithms", percentage: 70, icon: "fa-solid fa-sitemap" },
-  { name: "Object-Oriented Programming (OOP)", percentage: 85, icon: "fa-solid fa-cubes" },
+  {
+    name: "Object-Oriented Programming (OOP)",
+    percentage: 85,
+    icon: "fa-solid fa-cubes",
+  },
   // { name: "Cloud Computing (5G & Cloud Basics)", percentage: 65, icon: "fa-solid fa-cloud" },
 ];
-
 
 /* =========== Certifications ===========  */
 export const certifications = [
@@ -144,10 +153,11 @@ export const certifications = [
     title: "JavaScript Certificate",
     issuer: "Mahara_Tech",
     year: "2024",
-    link: "https://mahara-tech.org/certificates/javascript",
+    link: "https://drive.google.com/file/d/1dW_0IB0zs43s18eem2gAo7Hnxecrs2Kh/view?usp=drivesdk",
     description:
       "Covered core JavaScript concepts including variables, functions, DOM manipulation, events, and ES6 features.",
     skills: ["JavaScript", "DOM Manipulation", "ES6+", "Problem Solving"],
+    image: "/assets/JSMahartecCR.png", 
   },
   {
     id: 2,
@@ -167,62 +177,109 @@ export const certifications = [
       "Authentication",
       "API Integration",
     ],
+    image: "/assets/NOT.png", 
   },
   {
     id: 3,
-    title: ".NET Full Stack Development Training",
-    issuer: "DEPI Program",
+    title: "Systel",
+    issuer: "Systel Telecom",
+    year: 2024,
+    link: "https://drive.google.com/file/d/1Kg8IBURz_8kwNmjWF-lj0Vf8Ix5mnjWO/view?usp=sharing", // optional: add certificate URL if you have one
+    description:
+      "Completed a 4-week summer training covering telecommunications, public safety communication, microwave & broadband, fiber optics, CCTV, and professional skills (communication, leadership, freelancing).",
+    skills: [
+      "Telecommunications",
+      "Public Safety Communication",
+      "Microwave Communication",
+      "Fiber Optics",
+      "CCTV",
+      "Antennas",
+      "Two-Way Radio",
+    ],
+    image: "/assets/SystelCR.png", 
+  },
+{
+  id: 4,
+  title: "5G Training",
+  issuer: "Hawi Talent",
+  year: 2024,
+  link: "https://drive.google.com/file/d/1PJaqnkM4w401N4EXTIv5fKOwVhXyqSzC/view?usp=sharing",
+  description:
+    "Completed training focused on next-generation mobile networks, covering the fundamentals and applications of 5G technology.",
+  skills: [
+    "5G Networks",
+    "Next-Generation Networks",
+    "Wireless Communication",
+    "Networking Basics",
+  ],
+  image: "/assets/5GCR.png", 
+},
+{
+  id: 5,
+  title: "Cloud Computing Training",
+  issuer: "Hawi Talent",
+  year: 2024,
+  link: "https://drive.google.com/file/d/1Hg0JX4lGyMq32xtjVMKIycyQYz7Ypq-I/view?usp=sharing",
+  description:
+    "Completed training on cloud solutions, virtualization, and fundamental concepts in cloud computing.",
+  skills: [
+    "Cloud Computing",
+    "Virtualization",
+    "Networking Basics",
+    "Cloud Solutions",
+  ],
+  image: "/assets/CloudCR.png", 
+},
+
+  {
+    id: 6,
+    title: "Data Analytics ",
+    issuer: "Data Pill",
+    year: "2025",
+    link: "https://drive.google.com/file/d/1GLJIN3t6E9cUzChAEsPGMXbFyFehMoZo/view?usp=sharing",
+    description:
+      "Covered core JavaScript concepts including variables, functions, DOM manipulation, events, and ES6 features.",
+    skills: ["SQL", "SSIS", "SSMS", "PowerBI"],
+    image: "/assets/DataCR.png", 
+  },
+  {
+    id: 7,
+    title: "ITIDA Gigs Program",
+    issuer: "EYouth",
     year: 2025,
-    link: "",
+    link: "https://drive.google.com/file/d/1ET85jSiAkw5DO_ZtNG1ogBySWeiu3VL3/view?usp=drive_link",
+    description:
+      "Intensive front-end training focused on modern frameworks and advanced web development practices.",
+    skills: ["Freelancing"],
+    image: "/assets/ITIDACR.png", 
+  },
+  {
+    id: 8,
+    title: "JavaScript ",
+    issuer: "Udemy",
+    year: 2025,
+    link: "https://drive.google.com/file/d/1Ky5vF_D0yhOXoaOl2UHJO8lJpAi3PTtv/view?usp=drivesdk",
     description:
       "Hands-on training in backend and full-stack development using Microsoft technologies.",
-    skills: [
-      "C#",
-      "ASP.NET MVC",
-      "Entity Framework Core",
-      "LINQ",
-      "SQL Server",
-      "REST APIs",
-      "Full-Stack Development",
-    ],
-  },
-  {
-    id: 4,
-    title: "AI & Web Development Training",
-    issuer: "Shubra Faculty of Engineering",
-    year: 2024,
-    link: "",
-    description:
-      "Introduced AI fundamentals and integrated them with modern web technologies through practical projects.",
-    skills: ["Python", "Machine Learning Basics", "Web Development", "Data Handling"],
-  },
-  {
-    id: 5,
-    title: "5G & Cloud Computing Training",
-    issuer: "Hawi Talent",
-    year: 2024,
-    link: "",
-    description:
-      "Covered emerging technologies including next-generation networks and cloud solutions.",
-    skills: ["5G Networks", "Cloud Computing", "Virtualization", "Networking Basics"],
+    skills: ["JavaScript#"],
+    image: "/assets/JSUdemyCR.png", 
   },
 ];
 
 /* =========== Projects ===========  */
 export const projects = [
-
   {
     id: 1,
-    title: "Freelancing Platform",
+    title: "SkilledBridge Platform",
     description:
       "A full-featured freelancing platform built with React. Includes authentication, protected routes, job posting & applications, and state management using Context API.",
     date: "August 2025",
-    duration: "2 months",
+    duration: "1 months",
     tags: ["React", "Context API", "Authentication", "REST API"],
-    image: "/images/freelancing.png", // replace with your project screenshot
+    image: "/assets/SkilledPR.png", // replace with your project screenshot
     links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/freelancing-platform",
+      demo: "https://skilled-bridge-platform.vercel.app/",
+      github: "https://github.com/nadaashraf25003/SkilledBridge_Platform",
     },
   },
   {
@@ -233,10 +290,10 @@ export const projects = [
     date: "June 2025",
     duration: "1.5 months",
     tags: ["JavaScript", "Face-API.js", "Google Sheets API"],
-    image: "/images/smart-university.png",
+    image: "/assets/SchoolPR.png",
     links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/smart-university",
+      demo: "https://smart-school-system-alpha.vercel.app/",
+      github: "https://github.com/nadaashraf25003/Smart-School-System",
     },
   },
   {
@@ -247,10 +304,10 @@ export const projects = [
     date: "April 2025",
     duration: "2 weeks",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/gpa.png",
+    image: "/assets/GPAPR.png",
     links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/gpa-calculator",
+      demo: "https://gpa-calculator-five-sage.vercel.app/",
+      github: "https://github.com/nadaashraf25003/GPA_Calculator",
     },
   },
   {
@@ -261,10 +318,10 @@ export const projects = [
     date: "March 2025",
     duration: "3 weeks",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/editor.png",
+    image: "/assets/ImagPR.png",
     links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/image-editor",
+      demo: "https://image-editor-xi-swart.vercel.app/",
+      github: "https://github.com/nadaashraf25003/Image_Editor",
     },
   },
   {
@@ -272,325 +329,102 @@ export const projects = [
     title: "Course Website",
     description:
       "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
+    date: "February 2024",
     duration: "1 month",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
+    image: "/assets/CoursePR.png",
     links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
+      demo: "https://nadaashraf25003.github.io/Courses_website/",
+      github: "https://github.com/nadaashraf25003/Courses_website",
     },
   },
-  {
-    id: 6,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+ {
+  id: 6,
+  title: "Coffee Shop Website",
+  description:
+    "A responsive coffee shop website featuring product listings, order forms, and a modern UI/UX design for a smooth customer experience.",
+  date: "December 2024",
+  duration: "2 weeks",
+  tags: ["HTML", "CSS", "JavaScript", "PHP", "PHPMailer"],
+  image: "/assets/CoffPR.png",
+  links: {
+    demo: "https://drive.google.com/file/d/1fMdt5QPkKAZLwoTo_BhcGNek3zGS8Ktr/view?usp=sharing",
+    github: "https://github.com/nadaashraf25003/Coffee-_Shop",
   },
-  {
-    id: 7,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+},
+
+{
+  id: 7,
+  title: "Recipes API",
+  description:
+    "A RESTful API providing recipe data, supporting CRUD operations, search, and filtering for food applications or websites.",
+  date: "July 2025",
+  duration: "2 weeks",
+  tags: ["JavaScript", "React", "API"],
+  image: "/assets/RecipPR.png",
+  links: {
+    demo: "https://recipe-api-react-fawn.vercel.app/",
+    github: "https://github.com/nadaashraf25003/Recipe_API_React",
   },
-  {
-    id: 8,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+},
+
+{
+  id: 8,
+  title: "Library Management System",
+  description:
+    "A web-based library system allowing book management, borrowing/return tracking, and member registration with admin and user roles.",
+  date: "July 2025",
+  duration: "3 weeks",
+  tags: ["HTML", "CSS", "JavaScript"],
+  image: "/assets/LibraryPR.png",
+  links: {
+    demo: "https://nadaashraf25003.github.io/Library/",
+    github: "https://github.com/nadaashraf25003/Library",
   },
-  {
-    id: 9,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+},
+
+{
+  id: 9,
+  title: "MSP Club Website",
+  description:
+    "A website for a student club including events, activities, and membership features with a responsive and interactive design.",
+  date: "September 2024",
+  duration: "2 weeks",
+  tags: ["HTML", "CSS", "JavaScript"],
+  image: "/assets/MSPPR.png",
+  links: {
+    demo: "https://msp2024-2025.vercel.app/",
+    github: "https://github.com/nadaashraf25003/MSP_2024-2025",
   },
-  {
-    id: 10,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+},
+
+{
+  id: 10,
+  title: "Data Analysis Final Project",
+  description:
+    "A comprehensive data analytics project including data cleaning, exploration, visualization, and actionable insights for business decision-making.",
+  date: "August 2025",
+  duration: "1 month",
+  tags: ["SQL", "SSIS", "SSMS", "Power BI"],
+  image: "/assets/DataPR.png",
+  links: {
+    demo: "https://mavenshowcase.com/project/42889",
+    github: "https://github.com/nadaashraf25003/Data-Analytics_Final_Project",
   },
-  {
-    id: 11,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
+},
+
+{
+  id: 11,
+  title: "Nove Website with Tailwind",
+  description:
+    "A modern, responsive website built using Tailwind CSS, featuring a clean design, reusable components, and optimized layout for multiple devices.",
+  date: "August 2025",
+  duration: "2 weeks",
+  tags: ["HTML", "Tailwind CSS", "JavaScript"],
+  image: "/assets/NovaPR.png",
+  links: {
+    demo: "https://depi-3.vercel.app/",
+    github: "https://github.com/nadaashraf25003/DEPI_3",
   },
-  {
-    id: 12,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 13,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 14,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 15,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 16,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 17,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 18,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 19,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 20,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 21,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 22,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 23,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 24,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 25,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 26,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-  {
-    id: 27,
-    title: "Course Website",
-    description:
-      "A multi-page responsive course website including start, enroll, learning, review, and contact pages.",
-    date: "February 2025",
-    duration: "1 month",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/images/course.png",
-    links: {
-      demo: "https://your-demo-link.com",
-      github: "https://github.com/yourusername/course-website",
-    },
-  },
-    
+},
 ];
-
-
-
