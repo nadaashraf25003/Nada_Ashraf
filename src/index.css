@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* =========== Font ===========  */
+@import url("https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap");
+
+/* =========== Global Styles ===========  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+#FE7743
+#273F4F
+#447D9B
+#D7D7D7 */
+/* 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)'  */
+/* --root-body:linear-gradient(135deg, #f8fafc 0%, #cdd3d7 0%); */
+/* --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff); */
+:root {
+  --primary-color: #011a3a;
+  --second-color: #029bb7;
+  --PrimSec: #011a3a;
+  --orange: #ff5b1b;
+  --text-color: #000;
+  --btn-color: #0a152f;
+  --btn-txt-color: #fff;
+  --body: #d7d7d7;
+  --root-body: #d7d7d7;
+  --gradient: linear-gradient(to bottom, #0a1c33, #00414c, #2e2167);
+}
+body.dark {
+  --PrimSec: #029bb7;
+  --text-color: #fff;
+  --btn-color: #afd7fd;
+  --btn-txt-color: #000;
+  --body: #273f4f;
+  --root-body: linear-gradient(135deg, #1e293b 0%, #293342 100%);
+  /* --root-body: #029bb7; */
+}
+
+::selection {
+  background-color: var(--second-color);
+  color: white;
+}
+p {
+  color: var(--text-color);
+}
+body {
+  font-family: "Mozilla Headline", sans-serif;
+  background-color: var(--body);
+}
+
+/* =========== Button ===========  */
+.button {
+  background: var(--btn-color);
+  border-radius: 0.5em;
+  box-shadow: inset 0px -6px 18px -6px var(--btn-color),
+    inset rgba(54, 69, 75, 1) -1px -1px 6px 0px,
+    inset 12px 0px 12px -6px var(--btn-color),
+    inset -12px 0px 12px -6px var(--btn-color),
+    rgba(54, 69, 75, 1) -1px -1px 6px 0px;
+  /* border: solid 2px #030f14; */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.7em 1.7em;
+  outline: none;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.button:hover {
+  box-shadow: inset 0px -6px 18px -6px rgba(3, 15, 20, 0.5),
+    inset 0px 6px 18px -6px rgba(3, 15, 20, 0.5),
+    inset 12px 0px 12px -6px var(--btn-color),
+    inset -12px 0px 12px -6px var(--btn-color),
+    -1px -1px 6px 0px rgba(54, 69, 75, 0.5);
+}
+
+.button:active {
+  box-shadow: inset 0px -12px 12px -6px rgba(3, 15, 20, 0.5),
+    inset 0px 12px 12px -6px rgba(3, 15, 20, 0.5),
+    inset 12px 0px 12px -6px rgba(3, 15, 20, 0.5),
+    inset -12px 0px 12px -6px rgba(3, 15, 20, 0.5),
+    -1px -1px 6px 0px rgba(54, 69, 75, 0.5);
+}
+
+.text {
+  color: var(--btn-txt-color);
+  font-weight: 700;
+  margin: auto;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.button:hover .text {
+  transform: scale(0.9);
+}
+
+.button:active .text {
+  transform: scale(0.8);
+}
+
+/* .gradient-text {
+background: linear-gradient(135deg, #3e0703, #660b05, #8c1007, #e04e44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* =========== Cover ===========  */
+.cover {
+  background-color: #eae9e9;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.071) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  /* background-color: #eae9e9 ; */
+  /* background: url(https://img.freepik.com/premium-photo/pastel-blue-watercolor-background_199112-157.jpg?w=2000); */
+  /* background: url(https://tse2.mm.bing.net/th/id/OIP.cNUhnft6lvH4BCb2fs3gHgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3); */
+  /* background: url(https://tse4.mm.bing.net/th/id/OIP.SLIi_o_3zuOpN4XcZsesMgHaEL?r=0&w=638&h=360&rs=1&pid=ImgDetMain&o=7&rm=3); */
+  /* background: url(https://tse3.mm.bing.net/th/id/OIP.eTUGCTI2Vp8XvdzOu6wdIgHaHa?r=0&w=1920&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3); */
+  /* background: url(https://tse4.mm.bing.net/th/id/OIP.RzW5AXF2z_ImUHoH0upZ4AHaEo?r=0&w=576&h=360&rs=1&pid=ImgDetMain&o=7&rm=3); */
+  /* background: url(https://cdn.vectorstock.com/i/preview-1x/61/66/abstract-geometric-shape-with-royal-blue-and-gold-vector-43616166.jpg); */
+  /* background: url(https://us.vaio.com/cdn/shop/files/EEE_1.png?v=1714373827&width=500); */
+  /* background-position: center; */
+  /* background-size: cover; */
+}
+body.dark .cover {
+  background: url(https://tse2.mm.bing.net/th/id/OIP.cNUhnft6lvH4BCb2fs3gHgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-position: center;
+  background-size: cover;
+  
+}
+.cover2 {
+  background: url(https://img.freepik.com/premium-photo/pastel-blue-watercolor-background_199112-157.jpg?w=2000);
+  /* background: url(https://media.istockphoto.com/illustrations/watercolor-background-illustration-id487919318?k=6&m=487919318&s=612x612&w=0&h=j7qaEaUaS5C5MMsxMKMeEHaKoKO5Wl_4IJO-QWHUab4=); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.dark .cover2 {
+  background: url(https://tse2.mm.bing.net/th/id/OIP.cNUhnft6lvH4BCb2fs3gHgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* =========== Animation Typing ===========  */
+
+.typing {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* @keyframes blink {
+  50% { border-color: transparent }
+} */
+
+/* =========== Gradient-border  ===========  */
+
+.gradient-border {
+  /* border: 4px solid transparent; */
+  /* border-image: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff) 1; */
+  /* border-radius: 12px; Keep rounded corners */
+}
+
+/* =========== Achievements  ===========  */
+.certification_card .span1 {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certification_card .span1::before {
+  content: "Verified";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(
+    45deg,
+    #ff6547 0%,
+    #ffb144 51%,
+    #ff7053 100%
+  );
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.certification_card .span1::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
