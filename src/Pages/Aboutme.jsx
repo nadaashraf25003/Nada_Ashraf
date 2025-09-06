@@ -21,7 +21,7 @@ function Aboutme() {
           <legend className="px-4 text-lg text-PrimSecColor font-extrabold">
             Front End React Developer
           </legend>
-          <p className="text-justify text-textColor font-bold leading-relaxed indent-16">
+          <p className="text-textColor font-bold leading-relaxed indent-16">
             I’m Nada Ashraf, a third-year Communication & Electronics
             Engineering student at Shubra Faculty of Engineering with a strong
             passion for web development, data analytics, and emerging

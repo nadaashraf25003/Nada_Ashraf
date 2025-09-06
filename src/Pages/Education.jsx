@@ -40,7 +40,7 @@ function Education() {
                 <h3 className="bg-gradient-to-r from-[#2eadff] via-[#3d83ff] to-[#7e61ff] bg-clip-text text-transparent font-semibold text-lg mb-4">
                   {item.institution}
                 </h3>
-                <p className="text-white text-justify leading-relaxed">
+                <p className="text-white  leading-relaxed">
                   {item.description}
                 </p>
                 <span className="mt-4 inline-block bg-gradient-to-r from-[#2eadff] via-[#3d83ff] to-[#7e61ff] text-white text-sm px-4 py-1 rounded-md shadow-md">

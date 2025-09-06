@@ -23,7 +23,7 @@ function Cover() {
           >
             Front End React Developer
           </p>
-          <p className="text-textColor font-bold text-justify indent-16">
+          <p className="text-textColor font-bold  indent-16">
             A Communication & Electronics Engineering student passionate about
             web development, data analytics, and emerging technologies. I build
             responsive websites, create data-driven insights, and enjoy teaching

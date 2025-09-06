@@ -35,7 +35,7 @@ function Experience() {
               {/* Details */}
               <ul className="list-disc list-inside space-y-1 text-gray-300 mb-5">
                 {exp.details.map((item, i) => (
-                  <li key={i} className="text-justify mb-5">
+                  <li key={i} className="mb-5">
                     <i className="fa-solid fa-star text-OrangeColor mr-2"></i>{" "}
                     {item}
                   </li>

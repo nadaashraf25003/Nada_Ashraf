@@ -65,7 +65,7 @@ function Projects() {
                 <h2 className="bg-gradient-to-r from-[#2eadff] via-[#3d83ff] to-[#7e61ff] bg-clip-text text-transparent font-extrabold text-xl mb-2">
                   {project.title}
                 </h2>
-                <p className="text-gray-500 text-sm text-justify">
+                <p className="text-gray-500 text-sm ">
                   {project.description}
                 </p>
               </div>

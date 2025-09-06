@@ -49,7 +49,7 @@ function Services() {
               <h2 className="bg-gradient-to-r from-[#2eadff] via-[#3d83ff] to-[#7e61ff] bg-clip-text text-transparent font-extrabold text-l  mb-2">
                 {service.title}
               </h2>
-              <p className="text-white text-justify leading-relaxed">
+              <p className="text-white  leading-relaxed">
                 {service.description}
               </p>
             </div>

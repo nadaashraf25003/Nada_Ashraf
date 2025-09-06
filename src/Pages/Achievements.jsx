@@ -57,7 +57,7 @@ function Achievements() {
                   <h2 className="text-gray-200 font-extrabold text-sm mb-2">
                     {certification.issuer}
                   </h2>
-                  <p className="text-gray-500 text-sm text-justify">
+                  <p className="text-gray-500 text-sm">
                     {certification.description}
                   </p>
                 </div>
