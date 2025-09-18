@@ -35,6 +35,18 @@ export const education = [
 /* =========== Experiences ===========  */
 export const experiences = [
   {
+    role: "Full Stack .NET Trainee",
+    organization: "DEPI (Digital Egypt Pioneers Initiative)",
+    duration: "Jun 2025 – Present",
+    details: [
+      "Currently pursuing training in Full Stack .NET Development covering front-end and back-end technologies.",
+      "Learning C#, ASP.NET MVC, EF Core, LINQ, SQL Server, and APIs.",
+      "Building applications using Angular, HTML, CSS, and JavaScript.",
+      "Practicing authentication, authorization, database integration, and software design patterns.",
+      "Developing end-to-end web applications with Agile methodology and Git/GitHub.",
+    ],
+  },
+  {
     role: "Front-End Instructor",
     organization: "Shubra Faculty of Engineering",
     duration: "Feb 2024 – Present",
@@ -44,6 +56,37 @@ export const experiences = [
       "Provided mentorship and solved coding challenges.",
     ],
   },
+  {
+    role: "Telecommunications Trainee",
+    organization: "National Telecommunication Institute (NTI)",
+    duration: "Aug 2025 – Sep 2025",
+    details: [
+      "Studied telecommunications fundamentals with a focus on 2G and 3G technologies.",
+      "Learned about GSM and UMTS network architecture, including HLR, VLR, SGSN, GGSN, and Node B.",
+      "Gained knowledge of signaling, mobility management, and security mechanisms in cellular networks.",
+    ],
+  },
+  {
+    role: "React Development Trainee",
+    organization: "Information Technology Institute (ITI)",
+    duration: "Jul 2025 – Aug 2025",
+    details: [
+      "Completed training in React and front-end development.",
+      "Built responsive web applications using React, JavaScript, HTML, and CSS.",
+      "Practiced component-based design, state management, and API integration.",
+    ],
+  },
+  {
+    role: "Data Analysis Trainee",
+    organization: "Self/Workshops & Projects",
+    duration: "Jun 2025 – Aug 2025",
+    details: [
+      "Gained hands-on experience in data cleaning, analysis, and visualization using Python and Pandas.",
+      "Worked with SQL and Power BI to generate business insights from sales datasets.",
+      "Developed interactive dashboards to track KPIs such as sales, profit, and customer segmentation.",
+    ],
+  },
+
   {
     role: "Trainer",
     organization: "Hawi Talent (5G & Cloud Computing, AI, Web Development)",
@@ -157,7 +200,7 @@ export const certifications = [
     description:
       "Covered core JavaScript concepts including variables, functions, DOM manipulation, events, and ES6 features.",
     skills: ["JavaScript", "DOM Manipulation", "ES6+", "Problem Solving"],
-    image: "/assets/JSMahartecCR.png", 
+    image: "/assets/JSMahartecCR.png",
   },
   {
     id: 2,
@@ -177,7 +220,7 @@ export const certifications = [
       "Authentication",
       "API Integration",
     ],
-    image: "/assets/NOT.png", 
+    image: "/assets/NOT.png",
   },
   {
     id: 3,
@@ -196,40 +239,40 @@ export const certifications = [
       "Antennas",
       "Two-Way Radio",
     ],
-    image: "/assets/SystelCR.png", 
+    image: "/assets/SystelCR.png",
   },
-{
-  id: 4,
-  title: "5G Training",
-  issuer: "Hawi Talent",
-  year: 2024,
-  link: "https://drive.google.com/file/d/1PJaqnkM4w401N4EXTIv5fKOwVhXyqSzC/view?usp=sharing",
-  description:
-    "Completed training focused on next-generation mobile networks, covering the fundamentals and applications of 5G technology.",
-  skills: [
-    "5G Networks",
-    "Next-Generation Networks",
-    "Wireless Communication",
-    "Networking Basics",
-  ],
-  image: "/assets/5GCR.png", 
-},
-{
-  id: 5,
-  title: "Cloud Computing Training",
-  issuer: "Hawi Talent",
-  year: 2024,
-  link: "https://drive.google.com/file/d/1Hg0JX4lGyMq32xtjVMKIycyQYz7Ypq-I/view?usp=sharing",
-  description:
-    "Completed training on cloud solutions, virtualization, and fundamental concepts in cloud computing.",
-  skills: [
-    "Cloud Computing",
-    "Virtualization",
-    "Networking Basics",
-    "Cloud Solutions",
-  ],
-  image: "/assets/CloudCR.png", 
-},
+  {
+    id: 4,
+    title: "5G Training",
+    issuer: "Hawi Talent",
+    year: 2024,
+    link: "https://drive.google.com/file/d/1PJaqnkM4w401N4EXTIv5fKOwVhXyqSzC/view?usp=sharing",
+    description:
+      "Completed training focused on next-generation mobile networks, covering the fundamentals and applications of 5G technology.",
+    skills: [
+      "5G Networks",
+      "Next-Generation Networks",
+      "Wireless Communication",
+      "Networking Basics",
+    ],
+    image: "/assets/5GCR.png",
+  },
+  {
+    id: 5,
+    title: "Cloud Computing Training",
+    issuer: "Hawi Talent",
+    year: 2024,
+    link: "https://drive.google.com/file/d/1Hg0JX4lGyMq32xtjVMKIycyQYz7Ypq-I/view?usp=sharing",
+    description:
+      "Completed training on cloud solutions, virtualization, and fundamental concepts in cloud computing.",
+    skills: [
+      "Cloud Computing",
+      "Virtualization",
+      "Networking Basics",
+      "Cloud Solutions",
+    ],
+    image: "/assets/CloudCR.png",
+  },
 
   {
     id: 6,
@@ -240,7 +283,7 @@ export const certifications = [
     description:
       "Covered core JavaScript concepts including variables, functions, DOM manipulation, events, and ES6 features.",
     skills: ["SQL", "SSIS", "SSMS", "PowerBI"],
-    image: "/assets/DataCR.png", 
+    image: "/assets/DataCR.png",
   },
   {
     id: 7,
@@ -251,7 +294,7 @@ export const certifications = [
     description:
       "Intensive front-end training focused on modern frameworks and advanced web development practices.",
     skills: ["Freelancing"],
-    image: "/assets/ITIDACR.png", 
+    image: "/assets/ITIDACR.png",
   },
   {
     id: 8,
@@ -262,7 +305,7 @@ export const certifications = [
     description:
       "Hands-on training in backend and full-stack development using Microsoft technologies.",
     skills: ["JavaScript#"],
-    image: "/assets/JSUdemyCR.png", 
+    image: "/assets/JSUdemyCR.png",
   },
 ];
 
@@ -338,93 +381,93 @@ export const projects = [
       github: "https://github.com/nadaashraf25003/Courses_website",
     },
   },
- {
-  id: 6,
-  title: "Coffee Shop Website",
-  description:
-    "A responsive coffee shop website featuring product listings, order forms, and a modern UI/UX design for a smooth customer experience.",
-  date: "December 2024",
-  duration: "2 weeks",
-  tags: ["HTML", "CSS", "JavaScript", "PHP", "PHPMailer"],
-  image: "/assets/CoffPR.png",
-  links: {
-    demo: "https://drive.google.com/file/d/1fMdt5QPkKAZLwoTo_BhcGNek3zGS8Ktr/view?usp=sharing",
-    github: "https://github.com/nadaashraf25003/Coffee-_Shop",
+  {
+    id: 6,
+    title: "Coffee Shop Website",
+    description:
+      "A responsive coffee shop website featuring product listings, order forms, and a modern UI/UX design for a smooth customer experience.",
+    date: "December 2024",
+    duration: "2 weeks",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "PHPMailer"],
+    image: "/assets/CoffPR.png",
+    links: {
+      demo: "https://drive.google.com/file/d/1fMdt5QPkKAZLwoTo_BhcGNek3zGS8Ktr/view?usp=sharing",
+      github: "https://github.com/nadaashraf25003/Coffee-_Shop",
+    },
   },
-},
 
-{
-  id: 7,
-  title: "Recipes API",
-  description:
-    "A RESTful API providing recipe data, supporting CRUD operations, search, and filtering for food applications or websites.",
-  date: "July 2025",
-  duration: "2 weeks",
-  tags: ["JavaScript", "React", "API"],
-  image: "/assets/RecipPR.png",
-  links: {
-    demo: "https://recipe-api-react-fawn.vercel.app/",
-    github: "https://github.com/nadaashraf25003/Recipe_API_React",
+  {
+    id: 7,
+    title: "Recipes API",
+    description:
+      "A RESTful API providing recipe data, supporting CRUD operations, search, and filtering for food applications or websites.",
+    date: "July 2025",
+    duration: "2 weeks",
+    tags: ["JavaScript", "React", "API"],
+    image: "/assets/RecipPR.png",
+    links: {
+      demo: "https://recipe-api-react-fawn.vercel.app/",
+      github: "https://github.com/nadaashraf25003/Recipe_API_React",
+    },
   },
-},
 
-{
-  id: 8,
-  title: "Library Management System",
-  description:
-    "A web-based library system allowing book management, borrowing/return tracking, and member registration with admin and user roles.",
-  date: "July 2025",
-  duration: "3 weeks",
-  tags: ["HTML", "CSS", "JavaScript"],
-  image: "/assets/LibraryPR.png",
-  links: {
-    demo: "https://nadaashraf25003.github.io/Library/",
-    github: "https://github.com/nadaashraf25003/Library",
+  {
+    id: 8,
+    title: "Library Management System",
+    description:
+      "A web-based library system allowing book management, borrowing/return tracking, and member registration with admin and user roles.",
+    date: "July 2025",
+    duration: "3 weeks",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "/assets/LibraryPR.png",
+    links: {
+      demo: "https://nadaashraf25003.github.io/Library/",
+      github: "https://github.com/nadaashraf25003/Library",
+    },
   },
-},
 
-{
-  id: 9,
-  title: "MSP Club Website",
-  description:
-    "A website for a student club including events, activities, and membership features with a responsive and interactive design.",
-  date: "September 2024",
-  duration: "2 weeks",
-  tags: ["HTML", "CSS", "JavaScript"],
-  image: "/assets/MSPPR.png",
-  links: {
-    demo: "https://msp2024-2025.vercel.app/",
-    github: "https://github.com/nadaashraf25003/MSP_2024-2025",
+  {
+    id: 9,
+    title: "MSP Club Website",
+    description:
+      "A website for a student club including events, activities, and membership features with a responsive and interactive design.",
+    date: "September 2024",
+    duration: "2 weeks",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "/assets/MSPPR.png",
+    links: {
+      demo: "https://msp2024-2025.vercel.app/",
+      github: "https://github.com/nadaashraf25003/MSP_2024-2025",
+    },
   },
-},
 
-{
-  id: 10,
-  title: "Data Analysis Final Project",
-  description:
-    "A comprehensive data analytics project including data cleaning, exploration, visualization, and actionable insights for business decision-making.",
-  date: "August 2025",
-  duration: "1 month",
-  tags: ["SQL", "SSIS", "SSMS", "Power BI"],
-  image: "/assets/DataPR.png",
-  links: {
-    demo: "https://mavenshowcase.com/project/42889",
-    github: "https://github.com/nadaashraf25003/Data-Analytics_Final_Project",
+  {
+    id: 10,
+    title: "Data Analysis Final Project",
+    description:
+      "A comprehensive data analytics project including data cleaning, exploration, visualization, and actionable insights for business decision-making.",
+    date: "August 2025",
+    duration: "1 month",
+    tags: ["SQL", "SSIS", "SSMS", "Power BI"],
+    image: "/assets/DataPR.png",
+    links: {
+      demo: "https://mavenshowcase.com/project/42889",
+      github: "https://github.com/nadaashraf25003/Data-Analytics_Final_Project",
+    },
   },
-},
 
-{
-  id: 11,
-  title: "Nove Website with Tailwind",
-  description:
-    "A modern, responsive website built using Tailwind CSS, featuring a clean design, reusable components, and optimized layout for multiple devices.",
-  date: "August 2025",
-  duration: "2 weeks",
-  tags: ["HTML", "Tailwind CSS", "JavaScript"],
-  image: "/assets/NovaPR.png",
-  links: {
-    demo: "https://depi-3.vercel.app/",
-    github: "https://github.com/nadaashraf25003/DEPI_3",
+  {
+    id: 11,
+    title: "Nove Website with Tailwind",
+    description:
+      "A modern, responsive website built using Tailwind CSS, featuring a clean design, reusable components, and optimized layout for multiple devices.",
+    date: "August 2025",
+    duration: "2 weeks",
+    tags: ["HTML", "Tailwind CSS", "JavaScript"],
+    image: "/assets/NovaPR.png",
+    links: {
+      demo: "https://depi-3.vercel.app/",
+      github: "https://github.com/nadaashraf25003/DEPI_3",
+    },
   },
-},
 ];
