@@ -307,6 +307,17 @@ export const certifications = [
     skills: ["JavaScript#"],
     image: "/assets/JSUdemyCR.png",
   },
+  {
+    id: 9,
+    title: "Web Development Instructor",
+    issuer: "(MSP)",
+    year: 2024,
+    link: "https://drive.google.com/file/d/1N4IK0fOk4jwqj-VbHTvEryhcJEr8F8ZP/view?usp=sharing",
+    description:
+    "Recognized for delivering training sessions in web development, covering HTML, CSS, and JavaScript. Focused on teaching fundamentals and guiding students in building responsive websites.",
+    skills: ["HTML", "CSS", "JavaScript", "Teaching", "Mentorship"],
+    image: "/assets/WebHead.png",
+  },
 ];
 
 /* =========== Projects ===========  */
