@@ -318,6 +318,17 @@ export const certifications = [
     skills: ["HTML", "CSS", "JavaScript", "Teaching", "Mentorship"],
     image: "/assets/WebHead.png",
   },
+  {
+  id: 10, // increment as needed
+  title: "Data Analysis Certification",
+  issuer: "RiskRice Team",
+  year: "2025", // or the correct year
+  link: "https://drive.google.com/file/d/1rEjDjBNwXsISd3m0ssiQaepRYc5y7NbC/view?usp=sharing", // replace with actual link if available
+  description:
+    "Completed a practical Data Analysis program covering data cleaning, exploratory data analysis, dashboards, and reporting using tools like Excel and Power BI.",
+  skills: ["Data Analysis", "Excel", "Power BI", "Reporting", "Data Visualization"],
+  image: "/assets/RiskRice.png", // replace with actual image if you have one
+},
 ];
 
 /* =========== Projects ===========  */
