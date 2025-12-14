@@ -220,7 +220,7 @@ export const certifications = [
       "Authentication",
       "API Integration",
     ],
-    image: "/assets/NOT.png",
+    image: "/assets/ITI_Certification_React.jpg",
   },
   {
     id: 3,
