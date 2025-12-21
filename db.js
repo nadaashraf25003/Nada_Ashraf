@@ -329,6 +329,30 @@ export const certifications = [
   skills: ["Data Analysis", "Excel", "Power BI", "Reporting", "Data Visualization"],
   image: "/assets/RiskRice.png", // replace with actual image if you have one
 },
+{
+  id: 11,
+  title: "Mobile Communication Networks (Level 1)",
+  issuer: "National Telecommunications Institute (NTI)",
+  year: 2025,
+  link: "", // add Google Drive link when available
+  description:
+    "Completed a 60-hour training program covering mobile communication fundamentals and practical operation scenarios, including mobile network architectures, RF concepts, signaling protocols, mobility management, and security mechanisms across 1G to 5G networks. The program also included business and professional skills development.",
+  skills: [
+    "Mobile Communication Networks",
+    "Wireless Communication",
+    "RF Engineering",
+    "GSM",
+    "3G",
+    "4G LTE",
+    "5G",
+    "Network Architecture",
+    "Signaling Protocols",
+    "Mobility Management",
+    "Network Security",
+  ],
+  image: "/assets/NTI_MTCN.jpg", // update with actual image name
+}
+
 ];
 
 /* =========== Projects ===========  */
