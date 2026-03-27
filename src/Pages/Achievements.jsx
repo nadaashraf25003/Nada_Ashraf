@@ -12,13 +12,29 @@ function Achievements() {
   const [currentPage, setCurrentPage] = useState(1);
   const certificationsPerPage = 3;
 
+  const sortedCertifications = [...certifications].sort((a, b) => {
+    const yearA = Number(a.year) || 0;
+    const yearB = Number(b.year) || 0;
+
+    if (yearB !== yearA) {
+      return yearB - yearA;
+    }
+
+    return b.id - a.id;
+  });
+
   //  Calculate current projects
   const indexOfLast = currentPage * certificationsPerPage;
   const indexOfFirst = indexOfLast - certificationsPerPage;
-  const currentcertifications = certifications.slice(indexOfFirst, indexOfLast);
+  const currentcertifications = sortedCertifications.slice(
+    indexOfFirst,
+    indexOfLast
+  );
 
   //  Calculate total pages
-  const totalPages = Math.ceil(certifications.length / certificationsPerPage);
+  const totalPages = Math.ceil(
+    sortedCertifications.length / certificationsPerPage
+  );
 
   return (
     <>

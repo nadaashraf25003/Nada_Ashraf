@@ -13,13 +13,62 @@ function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 4;
 
+  const parseProjectDate = (dateText) => {
+    if (!dateText) return 0;
+
+    // Supports formats like "January 2026" and ranges like "Jun 2025 - Dec 2025".
+    const matches = [...dateText.matchAll(/([A-Za-z]+)\s+(\d{4})/g)];
+    if (!matches.length) return 0;
+
+    const monthMap = {
+      jan: 0,
+      january: 0,
+      feb: 1,
+      february: 1,
+      mar: 2,
+      march: 2,
+      apr: 3,
+      april: 3,
+      may: 4,
+      jun: 5,
+      june: 5,
+      jul: 6,
+      july: 6,
+      aug: 7,
+      august: 7,
+      sep: 8,
+      sept: 8,
+      september: 8,
+      oct: 9,
+      october: 9,
+      nov: 10,
+      november: 10,
+      dec: 11,
+      december: 11,
+    };
+
+    const timestamps = matches.map((match) => {
+      const monthName = match[1].toLowerCase();
+      const year = Number(match[2]);
+      const month = monthMap[monthName];
+      if (month === undefined || Number.isNaN(year)) return 0;
+      return new Date(year, month, 1).getTime();
+    });
+
+    return Math.max(...timestamps);
+  };
+
+  const sortedProjects = [...projects].sort(
+    (a, b) => parseProjectDate(b.date) - parseProjectDate(a.date)
+  );
+
   //  Calculate current projects
   const indexOfLast = currentPage * projectsPerPage;
   const indexOfFirst = indexOfLast - projectsPerPage;
-  const currentProjects = projects.slice(indexOfFirst, indexOfLast);
+  const currentProjects = sortedProjects.slice(indexOfFirst, indexOfLast);
 
   // ✅ Calculate total pages
-  const totalPages = Math.ceil(projects.length / projectsPerPage);
+  const totalPages = Math.ceil(sortedProjects.length / projectsPerPage);
 
   return (
     <>

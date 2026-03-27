@@ -35,15 +35,30 @@ export const education = [
 /* =========== Experiences ===========  */
 export const experiences = [
   {
-    role: "Full Stack .NET Trainee",
-    organization: "DEPI (Digital Egypt Pioneers Initiative)",
-    duration: "Jun 2025 – Present",
+    role: "Full-Stack .NET Developer Trainee",
+    organization: "Coding Developer · Internship (Remote)",
+    duration: "Jan 2026 · 1 mo",
     details: [
-      "Currently pursuing training in Full Stack .NET Development covering front-end and back-end technologies.",
-      "Learning C#, ASP.NET MVC, EF Core, LINQ, SQL Server, and APIs.",
-      "Building applications using Angular, HTML, CSS, and JavaScript.",
-      "Practicing authentication, authorization, database integration, and software design patterns.",
-      "Developing end-to-end web applications with Agile methodology and Git/GitHub.",
+      "Completed professional training in full-stack web development with a focus on enterprise applications using .NET and React.",
+      "Worked on Appsales ERP, a real-world enterprise system for managing sales operations, customers, branches, and financial transactions.",
+      "Developed frontend interfaces using React and Vite.",
+      "Built RESTful APIs using ASP.NET and .NET and integrated frontend/backend communication.",
+      "Implemented secure authentication using JWT.",
+      "Designed and managed relational databases using SQL Server.",
+      "Implemented business logic for order processing, financial calculations, and reporting.",
+      "Strengthened skills in scalable full-stack architecture and collaborative delivery of real business requirements.",
+    ],
+  },
+  {
+    role: "Full Stack .NET Trainee",
+    organization: "Digital Egypt Pioneers Initiative (DEPI)",
+    duration: "Jun 2025 – Dec 2025 · 7 mos",
+    details: [
+      "Completed Full Stack .NET Development training covering both front-end and back-end technologies.",
+      "Learned and practiced C#, ASP.NET MVC, EF Core, LINQ, SQL Server, and APIs.",
+      "Built responsive front-end applications using HTML, CSS, JavaScript, and Angular.",
+      "Explored software design patterns, authentication and authorization, and database integration.",
+      "Developed end-to-end web applications while applying Agile principles and version control with Git/GitHub.",
     ],
   },
   {
@@ -351,12 +366,85 @@ export const certifications = [
     "Network Security",
   ],
   image: "/assets/NTI_MTCN.jpg", // update with actual image name
+},
+{
+  id: 12,
+  title: "GDG on Campus Competition - Unix Smart Campus Project",
+  issuer: "GDG on Campus Benha University SB",
+  year: 2025,
+  link: "",
+  description:
+    "Recognized for participating in the GDG on Campus competition through the Unix Smart Campus project, a full-stack solution focused on improving campus operations and student services.",
+  skills: [
+    "UnixProject",
+    "FullStackDeveloper",
+    "React",
+    "ASP.NET",
+    "SQL Server",
+    "JWT",
+    "REST APIs",
+    "Team Collaboration",
+  ],
+  image: "/assets/Unix_GDG.jpeg",
+},
+{
+  id: 13,
+  title: "Full-Stack .NET Web Developer",
+  issuer: "Digital Egypt Pioneers Initiative (DEPI)",
+  year: 2026,
+  link: "",
+  description:
+    "Completed DEPI training as a Full-Stack .NET Web Developer, covering frontend and backend development, secure authentication, API design, and database-driven enterprise applications.",
+  skills: [
+    "FullStackDeveloper",
+    "DotNet",
+    "ASP.NET Core",
+    "React",
+    "SQL Server",
+    "JWT Authentication",
+    "REST APIs",
+  ],
+  image: "/assets/DEPI.jpg",
 }
 
 ];
 
 /* =========== Projects ===========  */
 export const projects = [
+  {
+    id: 13,
+    title: "Appsales ERP System",
+    description:
+      "A full-stack ERP system that streamlines sales tracking, customer and branch management, financial calculations, reporting, and secure role-based workflows.",
+    date: "January 2026",
+    duration: "1 month",
+    tags: ["React (Vite)", "ASP.NET", ".NET REST APIs", "SQL Server", "JWT"],
+    image: "/assets/appsales.jpg",
+    links: {
+      demo: "https://appsales-one.vercel.app/",
+      github: "https://github.com/nadaashraf25003/Appsales",
+    },
+  },
+  {
+    id: 14,
+    title: "Learnify - Learning Management System (LMS)",
+    description:
+      "A full-stack LMS built during DEPI that delivers role-based dashboards, enrollment and progress tracking, course and quiz management, certificates, and admin analytics in a modern learning environment.",
+    date: "Jun 2025 - Dec 2025",
+    duration: "7 months",
+    tags: [
+      "ASP.NET Core",
+      "React (Vite + TypeScript)",
+      "SQL Server",
+      "JWT Authentication",
+      "REST APIs",
+    ],
+    image: "/assets/learnify.jpg",
+    links: {
+      demo: "https://learnify-lms-depi.vercel.app/",
+      github: "https://github.com/nadaashraf25003/LMS_Learning_Management_System",
+    },
+  },
   {
     id: 1,
     title: "SkilledBridge Platform",
@@ -514,6 +602,20 @@ export const projects = [
     links: {
       demo: "https://depi-3.vercel.app/",
       github: "https://github.com/nadaashraf25003/DEPI_3",
+    },
+  },
+  {
+    id: 12,
+    title: "Unix - Smart Campus System",
+    description:
+      "A team-built Smart Campus platform for the GDG competition that streamlines university operations with schedule and exam tracking, real-time notifications, campus navigation, resource availability, Lost and Found, project monitoring, and admin CRUD management.",
+    date: "February 2026",
+    duration: "1 month",
+    tags: ["React", "ASP.NET", "C#", "SQL Server", "JWT"],
+    image: "/assets/unix.jpg",
+    links: {
+      demo: "https://unix-banha.vercel.app/",
+      github: "https://github.com/nadaashraf25003/Unix",
     },
   },
 ];
