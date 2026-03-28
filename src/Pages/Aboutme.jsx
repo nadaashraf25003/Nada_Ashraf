@@ -18,24 +18,25 @@ function Aboutme() {
 
         {/* <p>Front End React Developer</p> */}
         <fieldset className="border-2 border-PrimSecColor rounded-xl p-6 shadow-sm">
-          <legend className="px-4 text-lg text-PrimSecColor font-extrabold">
-            Front End React Developer
+          <legend className="px-4 text-lg text-PrimSecColor font-extrabold tracking-wide">
+            Full Stack Developer
           </legend>
-          <p className="text-textColor font-bold leading-relaxed indent-16">
+          <p className="text-textColor leading-8 text-[1.03rem]">
             I’m Nada Ashraf, a third-year Communication & Electronics
             Engineering student at Shubra Faculty of Engineering with a strong
             passion for web development, data analytics, and emerging
-            technologies. I specialize in building responsive, user-friendly
-            websites using HTML, CSS, JavaScript, React, and .NET, and I also
-            have experience in data analysis and visualization with Python,
-            Pandas, and Power BI. <br />
+            technologies. I specialize in building full-stack web applications
+            using HTML, CSS, JavaScript, React, .NET, and SQL, with experience
+            in designing responsive user interfaces, developing APIs, and
+            integrating databases. I also have experience in data analysis and
+            visualization using Python, Pandas, and Power BI. <br />
             <br />
             Alongside development, I work as a Web Development Instructor, where
             I enjoy teaching and simplifying complex concepts for students.
             Through projects like a Freelancing Platform, Smart University
             System, GPA Calculator, and Image Editor, I’ve gained hands-on
             experience in solving real-world problems. My goal is to grow as a
-            skilled software engineer and data analyst, creating impactful
+            skilled full stack engineer and data analyst, creating impactful
             digital solutions that bridge technology and innovation.
           </p>
           <div className="links mt-2 float-end">

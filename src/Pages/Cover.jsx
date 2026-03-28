@@ -21,7 +21,7 @@ function Cover() {
             className="text-secondColor text-2xl max-md:text-lg font-extrabold mb-5
           animate__animated animate__fadeInUp "
           >
-            Front End React Developer
+           Full stack (React, .NET) Developer
           </p>
           <p className="text-textColor font-bold  indent-16">
             A Communication & Electronics Engineering student passionate about
