@@ -153,11 +153,11 @@ export const skills = [
   { name: "Python", percentage: 75, icon: "fa-brands fa-python" },
   { name: "C++", percentage: 85, icon: "devicon-cplusplus-plain" },
   { name: "C#", percentage: 75, icon: "devicon-csharp-plain" },
-  { name: "JavaScript", percentage: 90, icon: "fa-brands fa-js" },
-  { name: "SQL", percentage: 70, icon: "fas fa-database" },
+  { name: "JavaScript", percentage: 95, icon: "fa-brands fa-js" },
+  { name: "SQL", percentage: 90, icon: "fas fa-database" },
 
   // Frameworks & Libraries
-  { name: "React", percentage: 85, icon: "fa-brands fa-react" },
+  { name: "React", percentage: 90, icon: "fa-brands fa-react" },
   // { name: "ASP.NET MVC", percentage: 80, icon: "devicon-dotnetcore-plain" },
   // { name: "Entity Framework Core", percentage: 75, icon: "fas fa-database" },
   // { name: "LINQ", percentage: 70, icon: "fa-solid fa-code" },
@@ -165,7 +165,7 @@ export const skills = [
   // Web Technologies
   { name: "HTML", percentage: 95, icon: "fa-brands fa-html5" },
   { name: "CSS", percentage: 90, icon: "fa-brands fa-css3-alt" },
-  { name: "APIs", percentage: 80, icon: "fa-solid fa-plug" },
+  { name: "APIs", percentage: 90, icon: "fa-solid fa-plug" },
   { name: "PHP", percentage: 65, icon: "fa-brands fa-php" },
   // { name: "Angular (Basics)", percentage: 60, icon: "fa-brands fa-angular" },
 
@@ -174,17 +174,17 @@ export const skills = [
   // { name: "MySQL", percentage: 70, icon: "devicon-mysql-plain" },
   {
     name: "SQL Server",
-    percentage: 70,
+    percentage: 90,
     icon: "devicon-microsoftsqlserver-plain",
   },
 
   // Tools
-  { name: "Git & GitHub", percentage: 85, icon: "fa-brands fa-github" },
+  { name: "Git & GitHub", percentage: 95, icon: "fa-brands fa-github" },
   // { name: "Linux", percentage: 65, icon: "fa-brands fa-linux" },
-  { name: "Visual Studio", percentage: 80, icon: "devicon-visualstudio-plain" },
-  { name: "VS Code", percentage: 90, icon: "devicon-vscode-plain" },
+  { name: "Visual Studio", percentage: 90, icon: "devicon-visualstudio-plain" },
+  { name: "VS Code", percentage: 95, icon: "devicon-vscode-plain" },
   // { name: "PyCharm", percentage: 75, icon: "devicon-pycharm-plain" },
-  { name: "Figma", percentage: 80, icon: "fa-brands fa-figma" },
+  { name: "Figma", percentage: 85, icon: "fa-brands fa-figma" },
   // { name: "Adobe XD", percentage: 80, icon: "devicon-xd-plain" },
 
   // Concepts
@@ -192,7 +192,7 @@ export const skills = [
   // { name: "State Management", percentage: 75, icon: "fa-solid fa-diagram-project" },
   {
     name: "Routing & Protected Routes",
-    percentage: 75,
+    percentage: 85,
     icon: "fa-solid fa-route",
   },
   // { name: "Data Structures & Algorithms", percentage: 70, icon: "fa-solid fa-sitemap" },
