@@ -127,7 +127,7 @@ export const services = [
   {
     id: 1,
     title: "Web Development",
-    icon: "🌐", // You can replace with an icon component
+    icon: "🌐",
     description:
       "Build responsive, scalable, and secure full-stack web applications using .NET, React, and SQL with API integration.",
   },
@@ -140,13 +140,40 @@ export const services = [
   },
   {
     id: 3,
+    title: "Back-End Development",
+    icon: "⚙️",
+    description:
+      "Develop robust back-end systems using .NET, build RESTful APIs, handle authentication, and manage databases efficiently.",
+  },
+  {
+    id: 4,
+    title: "API Integration",
+    icon: "🔗",
+    description:
+      "Integrate third-party APIs and build custom APIs to connect front-end applications with back-end services seamlessly.",
+  },
+  {
+    id: 5,
+    title: "Database Design",
+    icon: "🗄️",
+    description:
+      "Design and manage relational databases using SQL, ensuring optimized queries, data integrity, and scalability.",
+  },
+  {
+    id: 7,
+    title: "UI/UX Implementation",
+    icon: "✨",
+    description:
+      "Transform UI/UX designs into clean, responsive, and user-friendly web interfaces with attention to performance and usability.",
+  },
+  {
+    id: 8,
     title: "Training & Mentorship",
     icon: "📚",
     description:
       "Provide training in HTML, CSS, JavaScript, React, and .NET, guiding beginners and students through hands-on projects.",
   },
 ];
-
 /* =========== Skills ===========  */
 export const skills = [
   // Programming Languages
