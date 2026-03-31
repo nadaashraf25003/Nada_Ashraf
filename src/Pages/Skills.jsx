@@ -13,13 +13,13 @@ function Skills() {
       >
         <p
           className="text-5xl font-bold max-md:text-4xl text-OrangeColor mb-10 flex items-end gap-3
-        animate__animated animate__fadeInDown max-md:px-[40%]"
+        animate__animated animate__fadeInDown justify-center md:justify-start"
         >
           <span className="block h-[5px] max-md:hidden w-[70%] bg-PrimSecColor "></span>
           Skills
           <span className="block h-[5px] max-md:hidden w-[70%] bg-PrimSecColor "></span>
         </p>
-        <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4 mx-10">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-0 sm:mx-4 lg:mx-10">
           {skills.map((item) => (
             <div
               key={item.name}
@@ -33,12 +33,6 @@ function Skills() {
                   rounded-full bg-gradient text-white text-2xl shadow"
               >
                 <i className={item.icon}></i>
-              </div>
-
-              {/* Percentage */}
-              <div className="percentage font-extrabold text-2xl text-white">
-                {item.percentage}
-                <span className="text-lg">%</span>
               </div>
 
               {/* Skill Name */}

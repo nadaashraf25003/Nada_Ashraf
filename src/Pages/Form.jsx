@@ -4,7 +4,7 @@ import "/src/index.css";
 function Form() {
   return (
     <>
-      <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative flex w-full max-w-sm flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 mb-4 grid h-16 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-mainColor to-secondColor bg-clip-border text-white shadow-lg ">
           <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
             Contact Me

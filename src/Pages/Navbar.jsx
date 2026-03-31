@@ -5,21 +5,58 @@ import "/src/index.css";
 import Nada from "/public/assets/Nada.png";
 
 // React
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // React
 // Components
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // track mobile menu state
-  const Location = useLocation();
-  console.log(Location.pathname);
+  const [activeHash, setActiveHash] = useState(() => window.location.hash || "#Home");
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash || "#Home");
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const isActive = (hash) => activeHash === hash;
+  const isDropdownActive = [
+    "#Experience",
+    "#Services",
+    "#Projects",
+    "#Achievements",
+  ].includes(activeHash);
+
+  const getDesktopItemClass = (hash) =>
+    `text-gray-200 text-[1rem] p-2 rounded transition-all duration-200 ${
+      isActive(hash) ? "bg-[#029bb7]" : "hover:bg-[#029bb7]"
+    }`;
+
+  const getMobileLinkClass = (hash) =>
+    `text-gray-200 p-2 rounded transition-all duration-200 ${
+      isActive(hash) ? "bg-[#029bb7]" : "hover:bg-[#029bb7]"
+    }`;
+
+  const handleNavClick = (hash) => {
+    setActiveHash(hash);
+  };
+
+  const handleMobileNavClick = (hash) => {
+    setActiveHash(hash);
+    setIsOpen(false);
+  };
+
   return (
     <>
       {/* Nanbar on Desktop  */}
       <nav
-        className="h-[95vh] ml-0 w-[20vw] bg-mainColor pt-10 max-lg:hidden rounded-l-xl overflow-y-auto
+        className="h-full lg:min-h-[95vh] ml-0 w-[260px] xl:w-[300px] bg-mainColor pt-10 max-lg:hidden rounded-l-xl overflow-y-auto
        scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-mainColor"
       >
         <div className="img text-center">
@@ -30,52 +67,84 @@ function Navbar() {
         </h2>
         {/* <hr className="w-50" /> */}
         <ul className="mx-10 max-xl:mx-5">
-          <li className=" text-gray-200 text-[1rem] hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Home")}>
             <i class="fa-solid fa-house mr-3 transition-all duration-200"></i>
-            <a href="#Home" className="text-gray-200">
+            <a
+              href="#Home"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Home")}
+            >
               Home
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#About")}>
             <i class="fa-solid fa-user mr-3 transition-all duration-200"></i>
-            <a href="#About" className="text-gray-200">
+            <a
+              href="#About"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#About")}
+            >
               About
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Education")}>
             <i class="fa-solid fa-file-pen mr-3 transition-all duration-200"></i>
-            <a href="#Education" className="text-gray-200">
+            <a
+              href="#Education"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Education")}
+            >
               Education
             </a>
           </li>
           {/* <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded"><i class="fa-solid fa-house mr-3 transition-all duration-200"></i><a href="#Home" className="text-gray-200">Skills</a></li> */}
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Experience")}>
             <i class="fa-solid fa-brain mr-3 transition-all duration-200"></i>
-            <a href="#Experience" className="text-gray-200">
+            <a
+              href="#Experience"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Experience")}
+            >
               Experience
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Services")}>
             <i class="fa-solid fa-gears mr-3 transition-all duration-200"></i>
-            <a href="#Services" className="text-gray-200">
+            <a
+              href="#Services"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Services")}
+            >
               Services
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Projects")}>
             <i class="fa-solid fa-diagram-project mr-3 transition-all duration-200"></i>
-            <a href="#Projects" className="text-gray-200">
+            <a
+              href="#Projects"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Projects")}
+            >
               Projects
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Achievements")}>
             <i class="fa-solid fa-trophy mr-3 transition-all duration-200"></i>
-            <a href="#Achievements" className="text-gray-200">
+            <a
+              href="#Achievements"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Achievements")}
+            >
               Achievements
             </a>
           </li>
-          <li className=" text-gray-200 text-[1rem]  hover:bg-[#029bb7] p-2 hover:rounded">
+          <li className={getDesktopItemClass("#Contact")}>
             <i class="fa-solid fa-envelope mr-3 transition-all duration-200"></i>
-            <a href="#Contact" className="text-gray-200">
+            <a
+              href="#Contact"
+              className="text-gray-200"
+              onClick={() => handleNavClick("#Contact")}
+            >
               Contact
             </a>
           </li>
@@ -121,7 +190,7 @@ function Navbar() {
       {/* Navbar on size less than Desktop  */}
       <nav
         className="fixed hidden ml-0 bg-mainColor p-2 max-lg:flex items-center justify-between
-            top-0 left-0 z-50 w-full px-10"
+        top-0 left-0 z-50 w-full px-4 sm:px-6 lg:px-10 shadow-lg"
       >
         <div className="flex items-center">
           <div className="img text-center">
@@ -129,53 +198,89 @@ function Navbar() {
           </div>
 
           <ul className="mx-10 max-xl:mx-5 flex max-sm:hidden relative">
-            <li className="text-gray-200 text-[1rem] hover:bg-[#029bb7] p-2 hover:rounded">
-              <a href="#Home" className="text-gray-200">
+            <li className={getDesktopItemClass("#Home")}>
+              <a
+                href="#Home"
+                className="text-gray-200"
+                onClick={() => handleNavClick("#Home")}
+              >
                 Home
               </a>
             </li>
-            <li className="text-gray-200 text-[1rem] hover:bg-[#029bb7] p-2 hover:rounded">
-              <a href="#About" className="text-gray-200">
+            <li className={getDesktopItemClass("#About")}>
+              <a
+                href="#About"
+                className="text-gray-200"
+                onClick={() => handleNavClick("#About")}
+              >
                 About
               </a>
             </li>
-            <li className="text-gray-200 text-[1rem] hover:bg-[#029bb7] p-2 hover:rounded">
-              <a href="#Education" className="text-gray-200">
+            <li className={getDesktopItemClass("#Education")}>
+              <a
+                href="#Education"
+                className="text-gray-200"
+                onClick={() => handleNavClick("#Education")}
+              >
                 Education
               </a>
             </li>
 
             {/* Dropdown */}
             <li className="relative group text-gray-200 text-[1rem] p-2 cursor-pointer">
-              <span className="hover:bg-[#029bb7] hover:rounded px-2   block">
+              <span
+                className={`px-2 block rounded ${
+                  isDropdownActive ? "bg-[#029bb7]" : "hover:bg-[#029bb7]"
+                }`}
+              >
                 Dropdown ▾
               </span>
               <ul className="absolute left-0 hidden group-hover:block bg-mainColor mt-2 rounded shadow-lg min-w-[150px] z-50">
-                <li className="hover:bg-[#029bb7] p-2 rounded">
-                  <a href="#Experience" className="text-gray-200">
+                <li className={getDesktopItemClass("#Experience")}>
+                  <a
+                    href="#Experience"
+                    className="text-gray-200"
+                    onClick={() => handleNavClick("#Experience")}
+                  >
                     Experience
                   </a>
                 </li>
-                <li className="hover:bg-[#029bb7] p-2 rounded">
-                  <a href="#Services" className="text-gray-200">
+                <li className={getDesktopItemClass("#Services")}>
+                  <a
+                    href="#Services"
+                    className="text-gray-200"
+                    onClick={() => handleNavClick("#Services")}
+                  >
                     Services
                   </a>
                 </li>
-                <li className="hover:bg-[#029bb7] p-2 rounded">
-                  <a href="#Projects" className="text-gray-200">
+                <li className={getDesktopItemClass("#Projects")}>
+                  <a
+                    href="#Projects"
+                    className="text-gray-200"
+                    onClick={() => handleNavClick("#Projects")}
+                  >
                     Projects
                   </a>
                 </li>
-                <li className="hover:bg-[#029bb7] p-2 rounded">
-                  <a href="#Achievements" className="text-gray-200">
+                <li className={getDesktopItemClass("#Achievements")}>
+                  <a
+                    href="#Achievements"
+                    className="text-gray-200"
+                    onClick={() => handleNavClick("#Achievements")}
+                  >
                     Achievements
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li className="text-gray-200 text-[1rem] hover:bg-[#029bb7] p-2 hover:rounded">
-              <a href="#Contact" className="text-gray-200">
+            <li className={getDesktopItemClass("#Contact")}>
+              <a
+                href="#Contact"
+                className="text-gray-200"
+                onClick={() => handleNavClick("#Contact")}
+              >
                 Contact
               </a>
             </li>
@@ -208,60 +313,60 @@ function Navbar() {
       </nav>
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="fixed  top-[65px] left-0 w-full bg-mainColor z-40 p-4 hidden flex-col gap-2 max-sm:flex">
+        <div className="fixed top-[70px] left-0 w-full bg-mainColor z-40 p-4 hidden flex-col gap-2 max-sm:flex shadow-lg">
           <a
             href="#Home"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Home")}
+            onClick={() => handleMobileNavClick("#Home")}
           >
             Home
           </a>
           <a
             href="#About"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#About")}
+            onClick={() => handleMobileNavClick("#About")}
           >
             About
           </a>
           <a
             href="#Education"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Education")}
+            onClick={() => handleMobileNavClick("#Education")}
           >
             Education
           </a>
           <a
             href="#Experience"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Experience")}
+            onClick={() => handleMobileNavClick("#Experience")}
           >
             Experience
           </a>
           <a
             href="#Services"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Services")}
+            onClick={() => handleMobileNavClick("#Services")}
           >
             Services
           </a>
           <a
             href="#Projects"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Projects")}
+            onClick={() => handleMobileNavClick("#Projects")}
           >
             Projects
           </a>
           <a
             href="#Achievements"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Achievements")}
+            onClick={() => handleMobileNavClick("#Achievements")}
           >
             Achievements
           </a>
           <a
             href="#Contact"
-            className="text-gray-200 hover:bg-[#029bb7] p-2 rounded"
-            onClick={() => setIsOpen(false)}
+            className={getMobileLinkClass("#Contact")}
+            onClick={() => handleMobileNavClick("#Contact")}
           >
             Contact
           </a>

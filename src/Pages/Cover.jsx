@@ -9,7 +9,7 @@ function Cover() {
   return (
     <>
       {/* h-full max-sm:h-[100vh] max-w-sm:h-[200vh] */}
-      <div className="relative cover flex  px-16 items-center py-[20%] max-lg:flex-wrap max-lg:justify-center gap-4">
+      <div className="relative cover flex px-16 items-center py-20 md:py-24 lg:py-[12%] max-lg:flex-wrap max-lg:justify-center gap-4">
         <div className="right w-3/4 max-md:w-full ">
           <h1
             className="text-5xl font-bold max-md:text-3xl text-OrangeColor mb-5
@@ -23,7 +23,7 @@ function Cover() {
           >
            Full stack (React, .NET) Developer
           </p>
-          <p className="text-textColor font-bold  indent-16">
+          <p className="text-textColor font-bold max-md:indent-0 indent-16">
             A Communication & Electronics Engineering student passionate about
             web development, data analytics, and emerging technologies. I build
             responsive websites, create data-driven insights, and enjoy teaching
@@ -53,7 +53,7 @@ function Cover() {
             </button> */}
             <a href="#Projects">
               <button class="button">
-                <div class="text">My Projects</div>
+                <div className="text">My Projects</div>
               </button>
             </a>
             <a
@@ -62,7 +62,7 @@ function Cover() {
             >
               {" "}
               <button class="button">
-                <div class="text">
+                <div className="text">
                   <i class="fa-solid fa-download"></i> Download CV
                 </div>
               </button>
@@ -89,7 +89,7 @@ function Cover() {
           <span className="w-[10px] bg-PrimSecColor h-[10px] block"></span>
         </div>
 
-        <div className="flex flex-col gap-4 absolute bottom-16 left-5">
+        <div className="flex flex-col gap-4 absolute bottom-16 left-5 max-md:hidden">
           <span className="h-[10px] bg-PrimSecColor w-[10px] block"></span>
           <span className="h-[10px] bg-PrimSecColor w-[10px] block"></span>
           <span className="h-[10px] bg-PrimSecColor w-[10px] block"></span>
@@ -103,7 +103,7 @@ function Cover() {
           <span className="w-[150px] bg-PrimSecColor h-[10px] block"></span>
         </div>
 
-        <div className="flex flex-col gap-4 absolute top-10 left-5">
+        <div className="flex flex-col gap-4 absolute top-10 left-5 max-md:hidden">
           <span className="h-[100px] bg-PrimSecColor w-[10px] block"></span>
           <span className="h-[10px] bg-PrimSecColor w-[10px] block"></span>
           <span className="h-[10px] bg-PrimSecColor w-[10px] block"></span>

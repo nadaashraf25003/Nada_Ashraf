@@ -177,23 +177,23 @@ export const services = [
 /* =========== Skills ===========  */
 export const skills = [
   // Programming Languages
-  { name: "Python", percentage: 75, icon: "fa-brands fa-python" },
-  { name: "C++", percentage: 85, icon: "devicon-cplusplus-plain" },
-  { name: "C#", percentage: 75, icon: "devicon-csharp-plain" },
-  { name: "JavaScript", percentage: 95, icon: "fa-brands fa-js" },
-  { name: "SQL", percentage: 90, icon: "fas fa-database" },
+  { name: "Python", icon: "fa-brands fa-python" },
+  { name: "C++", icon: "devicon-cplusplus-plain" },
+  { name: "C#", icon: "devicon-csharp-plain" },
+  { name: "JavaScript", icon: "fa-brands fa-js" },
+  { name: "SQL", icon: "fas fa-database" },
 
   // Frameworks & Libraries
-  { name: "React", percentage: 90, icon: "fa-brands fa-react" },
+  { name: "React", icon: "fa-brands fa-react" },
   // { name: "ASP.NET MVC", percentage: 80, icon: "devicon-dotnetcore-plain" },
   // { name: "Entity Framework Core", percentage: 75, icon: "fas fa-database" },
   // { name: "LINQ", percentage: 70, icon: "fa-solid fa-code" },
 
   // Web Technologies
-  { name: "HTML", percentage: 95, icon: "fa-brands fa-html5" },
-  { name: "CSS", percentage: 90, icon: "fa-brands fa-css3-alt" },
-  { name: "APIs", percentage: 90, icon: "fa-solid fa-plug" },
-  { name: "PHP", percentage: 65, icon: "fa-brands fa-php" },
+  { name: "HTML", icon: "fa-brands fa-html5" },
+  { name: "CSS", icon: "fa-brands fa-css3-alt" },
+  { name: "APIs", icon: "fa-solid fa-plug" },
+  { name: "PHP", icon: "fa-brands fa-php" },
   // { name: "Angular (Basics)", percentage: 60, icon: "fa-brands fa-angular" },
 
   // Databases
@@ -201,17 +201,16 @@ export const skills = [
   // { name: "MySQL", percentage: 70, icon: "devicon-mysql-plain" },
   {
     name: "SQL Server",
-    percentage: 90,
     icon: "devicon-microsoftsqlserver-plain",
   },
 
   // Tools
-  { name: "Git & GitHub", percentage: 95, icon: "fa-brands fa-github" },
+  { name: "Git & GitHub", icon: "fa-brands fa-github" },
   // { name: "Linux", percentage: 65, icon: "fa-brands fa-linux" },
-  { name: "Visual Studio", percentage: 90, icon: "devicon-visualstudio-plain" },
-  { name: "VS Code", percentage: 95, icon: "devicon-vscode-plain" },
+  { name: "Visual Studio", icon: "devicon-visualstudio-plain" },
+  { name: "VS Code", icon: "devicon-vscode-plain" },
   // { name: "PyCharm", percentage: 75, icon: "devicon-pycharm-plain" },
-  { name: "Figma", percentage: 85, icon: "fa-brands fa-figma" },
+  { name: "Figma", icon: "fa-brands fa-figma" },
   // { name: "Adobe XD", percentage: 80, icon: "devicon-xd-plain" },
 
   // Concepts
@@ -219,13 +218,11 @@ export const skills = [
   // { name: "State Management", percentage: 75, icon: "fa-solid fa-diagram-project" },
   {
     name: "Routing & Protected Routes",
-    percentage: 85,
     icon: "fa-solid fa-route",
   },
   // { name: "Data Structures & Algorithms", percentage: 70, icon: "fa-solid fa-sitemap" },
   {
     name: "Object-Oriented Programming (OOP)",
-    percentage: 85,
     icon: "fa-solid fa-cubes",
   },
   // { name: "Cloud Computing (5G & Cloud Basics)", percentage: 65, icon: "fa-solid fa-cloud" },
@@ -376,7 +373,7 @@ export const certifications = [
   title: "Mobile Communication Networks (Level 1)",
   issuer: "National Telecommunications Institute (NTI)",
   year: 2025,
-  link: "", // add Google Drive link when available
+  link: "https://drive.google.com/file/d/1MYAhdnl2VKToo1-sAyuCTwYXtCWHEpp0/view?usp=sharing", // add Google Drive link when available
   description:
     "Completed a 60-hour training program covering mobile communication fundamentals and practical operation scenarios, including mobile network architectures, RF concepts, signaling protocols, mobility management, and security mechanisms across 1G to 5G networks. The program also included business and professional skills development.",
   skills: [
@@ -399,7 +396,7 @@ export const certifications = [
   title: "GDG on Campus Competition - Unix Smart Campus Project",
   issuer: "GDG on Campus Benha University SB",
   year: 2025,
-  link: "",
+  link: "https://drive.google.com/file/d/1QdpRPFrIgHUWG_KLXRzBfWHEUJAh4XSo/view?usp=sharing",
   description:
     "Recognized for participating in the GDG on Campus competition through the Unix Smart Campus project, a full-stack solution focused on improving campus operations and student services.",
   skills: [
@@ -419,7 +416,7 @@ export const certifications = [
   title: "Full-Stack .NET Web Developer",
   issuer: "Digital Egypt Pioneers Initiative (DEPI)",
   year: 2026,
-  link: "",
+  link: "https://drive.google.com/file/d/1j8eZ8ZWneSrI8BYFnhmbPHlgvRMyyHKT/view?usp=sharing",
   description:
     "Completed DEPI training as a Full-Stack .NET Web Developer, covering frontend and backend development, secure authentication, API design, and database-driven enterprise applications.",
   skills: [

@@ -28,17 +28,17 @@ function Home() {
   return (
     <>
       <div
-        className="relative w-full lg:max-w-5xl xl:max-w-7xl  mx-auto my-5 
-        h-[95vh] 
+        className="home-shell relative w-full lg:max-w-5xl xl:max-w-7xl mx-auto my-0 lg:my-5
+        min-h-screen lg:h-[95vh]
         bg-navyGradient rounded-2xl  shadow-2xl shadow-gray-500  border-0 border-l-8  border-secondColor
-        flex max-md:border-0  "
+        flex max-lg:block max-md:border-0 max-lg:rounded-none"
         style={{ borderStyle: "solid" }}
       >
         <div>
           <Navbar />
         </div>
         <div
-          className="overflow-y-auto scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-mainColor  w-full"
+          className="overflow-y-auto scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-mainColor w-full h-full"
           style={{ scrollBehavior: "smooth" }}
         >
           <div id="Home">
@@ -60,7 +60,7 @@ function Home() {
           <div id="Projects">
             <Projects />
           </div>
-          <div className="cover2 workTogether py-[10%] text-center px-[15%] ">
+          <div className="cover2 workTogether py-16 text-center px-4 sm:px-10 lg:px-[15%]">
             <h1 className="text-5xl text-PrimSecColor font-bold mb-5 max-md:text-3xl">
               Do you have a Project Idea?
             </h1>
@@ -77,16 +77,16 @@ function Home() {
               rel="noopener noreferrer"
             >
               <button className="button">
-                <div class="text">
+                <div className="text">
                   Let's work Together
                   <i className="fa-brands fa-whatsapp ml-5"></i>
                 </div>
               </button>
             </a>
           </div>
-          <dov id="Achievements">
+          <div id="Achievements">
             <Achievements />
-          </dov>
+          </div>
           <div id="Contact">
             <Contact />
           </div>
@@ -96,13 +96,13 @@ function Home() {
         {/* Back to Top Button  */}
         <a
           href="#Home"
-          className="absolute bottom-10 right-[3%] h-10 w-10 rounded-full bg-PrimSecColor flex justify-center items-center text-white"
+          className="absolute bottom-10 right-[3%] h-10 w-10 rounded-full bg-PrimSecColor flex justify-center items-center text-white max-md:hidden"
         >
           <i className="fas fa-arrow-up" />
         </a>
 
         {/* Theme Button */}
-        <div className="theme-switcher  absolute bottom-24 right-[3%] h-10 w-10 rounded-full bg-PrimSecColor flex justify-center items-center text-white">
+        <div className="theme-switcher absolute bottom-24 right-[3%] h-10 w-10 rounded-full bg-PrimSecColor flex justify-center items-center text-white max-md:hidden">
           <button
             onClick={toggleTheme}
             className="bg-orangeColor border-0 text-white"
